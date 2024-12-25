@@ -27,7 +27,8 @@ Publish the website in the LocalHost.
 
 ## PROGRAM :
 ```
-html code
+
+dribble.html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -97,7 +98,7 @@ html code
     <section id="contact" class="content-section bg-light">
         <div class="container text-center">
             <h2>Contact Us</h2>
-            <p>Contact us via Email</p>
+            <p><a href="./contact.html"> Contact us via Email </a></p>
             <a href="mailto:info@example.com" class="btn btn-outline-dark">aadhavselvakumaresan@gmail.com</a>
         </div>
     </section>
@@ -112,9 +113,9 @@ html code
 </body>
 </html>
 
-css code
+dribble.css
 
-body {
+dy {
     font-family: "Dancing Script", serif;
     font-optical-sizing: auto;
     font-weight: 80%;
@@ -148,13 +149,235 @@ body {
     border-radius: 50px;
 }
 
+contact.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Dribble</h1>
+        </div>
+        <nav>
+            <ul>
+               
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-title">
+            <h2>Contact Us</h2>
+          
+        </section>
+        <section class="contact-form">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                
+              
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Designed and Developed by Aadhav S</p>
+    </footer>
+</body>
+</html>
+
+contact.css
+
+.contact-title {
+    text-align: center;
+    margin: 30px 0;
+    padding: 10px;
+    background-color: #fdebd0;
+   
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    
+}
+
+/* Contact Form */
+.contact-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #0b0b0b;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: flex;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 80%;
+    font-style: normal;
+}
+
+.contact-form button:hover {
+    background-color: #313333;
+}
+
+header {
+    background-color: #3d5630;
+    padding: 10px 20px;
+    display: flex;
+    color: #ddd;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 80%;
+    font-style: normal;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.page-title {
+    text-align: center;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 80%;
+    font-style: normal;
+}
+
+.page-title div {
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+main {
+    height: 75vh;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3d5630;
+    color: #ffffff;
+    margin-top: -10px;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 80%;
+    font-style: normal;
+}
+
+footer a {
+    text-decoration: none;
+    color: #345c46;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: 80%;
+    font-style: normal;
+}
+
+.contact-form form button{
+    display: flex;
+}
+
+
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot (56).png>)
-![alt text](<Screenshot (58).png>)
-![alt text](<Screenshot (57).png>)
-
+![alt text](<Screenshot (59).png>)
+![alt text](<Screenshot (60).png>)
+![alt text](<Screenshot (62).png>)
+![alt text](<Screenshot (64).png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
