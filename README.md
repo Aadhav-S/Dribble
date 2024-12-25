@@ -64,7 +64,7 @@ html code
     </section>
     <section id="gallery" class="content-section">
         <div class="container">
-            <h2 class="text-center mb-4">Nature Landscapes</h2>
+            
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <img src="nature1.jpg" class="img-fluid gallery-img" alt="Gallery 1">
@@ -151,8 +151,10 @@ body {
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot (54).png>)
-![alt text](<Screenshot (55).png>)
+![alt text](<Screenshot (56).png>)
+![alt text](<Screenshot (58).png>)
+![alt text](<Screenshot (57).png>)
+
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
