@@ -28,356 +28,170 @@ Publish the website in the LocalHost.
 ## PROGRAM :
 ```
 
-dribble.html
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dribble</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dribble.css">
+    <title>Design Showcase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #a8acb1;
+        }
+        .navbar {
+            margin-bottom: 30px;
+            font-family: "Lobster", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .card img {
+            object-fit: cover;
+            height: 150px;
+            
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            font-family: "Lobster", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .card-footer {
+            background-color: transparent;
+        }
+        .footer {
+           color: rgb(0, 0, 0);
+           padding-left:40% ;
+           padding-top:20px ;
+           padding-bottom:20px ;
+           background-color: white;
+           margin-top: 90px;
+        } 
+
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Dribble</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+ 
+    <nav class="navbar navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Dribbble Clone</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
         </div>
     </nav>
-    <section id="about" class="content-section bg-light">
-        <div class="container text-left">
-            <h2>What are you working on?</h2>
-            <p class="lead">Dribbble is show and tell for Designers</p>
-        </div>
-    </section>
-    <section id="gallery" class="content-section">
-        <div class="container">
-            
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <img src="nature1.jpg" class="img-fluid gallery-img" alt="Gallery 1">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="nature2.jpg" class="img-fluid gallery-img" alt="Gallery 2">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="nature3.jpg" class="img-fluid gallery-img" alt="Gallery 3">
+
+ 
+    <div class="container text-center mb-5">
+        <h1>What are you working on?</h1>
+        <p class="text-muted">Dribbble is show and tell for designers.</p>
+        <button class="btn btn-primary">Sign up</button>
+    </div>
+
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+         
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble1.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>Famous</span>
+                        <span class="text-muted">4,044 views</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <img src="nature4.jpg" class="img-fluid gallery-img" alt="Gallery 1">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="nature5.jpg" class="img-fluid gallery-img" alt="Gallery 2">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="nature6.jpg" class="img-fluid gallery-img" alt="Gallery 3">
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble2.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>Balkan Brothers</span>
+                        <span class="text-muted">2,404 views</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">more</a>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble3.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>Jan Losert</span>
+                        <span class="text-muted">8,909 views</span>
+                    </div>
+                </div>
             </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble4.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>Mattias Johansan</span>
+                        <span class="text-muted">4,567 views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble5.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>Ruslan Siiz</span>
+                        <span class="text-muted">3,908 views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble6.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>Paper Pillar</span>
+                        <span class="text-muted">2,445 views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble7.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>Alfrey Davilla</span>
+                        <span class="text-muted">7,078 views</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="dribble8.webp" class="card-img-top" alt="Sample Design">
+                    <div class="card-footer d-flex justify-content-between align-items-center">
+                        <span>inFullMobile</span>
+                        <span class="text-muted">5,860 views</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
         </div>
-    </section>
-    <section id="contact" class="content-section bg-light">
-        <div class="container text-center">
-            <h2>Contact Us</h2>
-            <p><a href="./contact.html"> Contact us via Email </a></p>
-            <a href="mailto:info@example.com" class="btn btn-outline-dark">aadhavselvakumaresan@gmail.com</a>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <p>Designed and Developed by Aadhav S</p>
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </div>
+    <footer class="footer">Designed and Developed by Aadhav S</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-dribble.css
-
-dy {
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: 80%;
-    font-style: normal;
-}
-.navbar {
-    background-color: #3d5630;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.navbar-brand, .nav-link {
-    color: white !important;
-}
-.content-section {
-    padding: 4rem 0;
-}
-.footer {
-    background-color: #3d5630;
-    color: white;
-    padding: 25px;
-    text-align: center;
-}
-.gallery-img {
-    max-height: 430px;
-    object-fit: cover;
-
-}
-.about {
-    max-height: 430px;
-    object-fit: cover;
-    border-radius: 50px;
-}
-
-contact.html
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Dribble</h1>
-        </div>
-        <nav>
-            <ul>
-               
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="page-title">
-            <h2>Contact Us</h2>
-          
-        </section>
-        <section class="contact-form">
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your Name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="Your Email" required>
-                
-              
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>Designed and Developed by Aadhav S</p>
-    </footer>
-</body>
-</html>
-
-contact.css
-
-.contact-title {
-    text-align: center;
-    margin: 30px 0;
-    padding: 10px;
-    background-color: #fdebd0;
-   
-    font-size: 2rem;
-    font-weight: bold;
-    border-radius: 8px;
-    
-}
-
-/* Contact Form */
-.contact-container {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact-form button {
-    background-color: #0b0b0b;
-    color: white;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 0 auto;
-    display: flex;
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: 80%;
-    font-style: normal;
-}
-
-.contact-form button:hover {
-    background-color: #313333;
-}
-
-header {
-    background-color: #3d5630;
-    padding: 10px 20px;
-    display: flex;
-    color: #ddd;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #ffffff;
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: 80%;
-    font-style: normal;
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-header .logo img {
-    height: 50px;
-    margin-right: 10px;
-}
-
-header h1 {
-    font-size: 1.8rem;
-    
-    font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-nav ul li a:hover {
-    background-color: #ddd;
-}
-
-.page-title {
-    text-align: center;
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: 80%;
-    font-style: normal;
-}
-
-.page-title div {
-    font-size: 22px;
-    margin-top: 30px;
-    font-weight: bold;
-}
-
-main {
-    height: 75vh;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #3d5630;
-    color: #ffffff;
-    margin-top: -10px;
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: 80%;
-    font-style: normal;
-}
-
-footer a {
-    text-decoration: none;
-    color: #345c46;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-.contact-form {
-    width: 400px;
-    margin: auto;
-    margin-top: 100px;
-    font-family: "Dancing Script", serif;
-    font-optical-sizing: auto;
-    font-weight: 80%;
-    font-style: normal;
-}
-
-.contact-form form button{
-    display: flex;
-}
-
 
 ```
 
 ## OUTPUT:
-![alt text](<Screenshot (59).png>)
-![alt text](<Screenshot (60).png>)
-![alt text](<Screenshot (62).png>)
-![alt text](<Screenshot (64).png>)
+![alt text](<Screenshot (66).png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
